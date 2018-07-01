@@ -1,0 +1,16 @@
+	<ol>
+	<% for x in @a %>
+<% if x.clg==params["clg"]%>
+<br><li>Name:<%= x.name%><br>
+	College:<%= x.clg%>
+<%@flag=1%>
+<% end %>
+<% end %>
+</li>
+</ol>
+
+ <% if @flag!=1 %>
+        <h2 align="center">Sorry :( </h2>
+        <h4 align="center">The Student is not enrolled in this college....</h4>
+     <% end %>
+     <a href="Home">HOME</a>

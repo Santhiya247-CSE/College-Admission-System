@@ -1,0 +1,42 @@
+<p align="center"><font color="magenta" family="verdana" size="20"><b>ENROLLED STUDENTS</b></p>
+</font>
+<%= link_to"CollegeBasedFilter",:action=>'CollegeBased'%>
+<%= link_to"CutoffBasedFilter",:action=>'CutoffBased'%>
+<ol>
+<% for x in @enrollmentlist %>
+<li>Name:<%= x.name%><br>
+Age:<%= x.age%><br>
+Gender:<%= x.gender%><br>
+Date of Birth:<%= x.dob%><br>
+Address:<%= x.address%><br>
+Qualification:<%= x.qualification%><br>
+Board:<%= x.board%><br>
+State:<%= x.state%><br>
+Photo:<%= x.pic%><br>
+Engg.Cut-off:<%= x.coff%><br>
+College:<%= x.clg%><br>
+Department:<%= x.dept%><br>
+Contactno:<%= x.cno%><br>
+Mail-Id:<%= x.mail%><br>
+</li>
+<%end%>
+</ol>
+<head>
+	<style>
+		.bg{
+		background:url("/images/14.gif");
+		background-size: 1000px 1000px;
+		color: yellow;
+
+		}
+		a:link{
+	 	color: white;
+	 }
+	 a:visited{
+	 	color: orange;
+	 }
+	</style>
+</head>
+<body class="bg" link="white">
+</body>
+<a><%= will_paginate @enrollmentlist %></a>

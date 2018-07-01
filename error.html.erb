@@ -1,0 +1,17 @@
+<ul>
+	<% @a.errors.each do |attr,msg| %>
+	<li>
+		<%=attr%>:<%=msg%>
+	</li>
+	<% end %>
+</ul>
+<head>
+	<style>
+		.bg{
+			background-image: url("/images/17.gif");
+			background-size: 1000px 1000px;
+		}
+	</style>
+</head>
+<body class="bg">
+</body>

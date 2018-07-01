@@ -1,0 +1,27 @@
+<!--<h1>
+Name:<%= params["name"] %><br>
+password:<%= params["password"] %><br>
+</h1>
+-->
+<head>
+	<style>
+	.bg{
+	  background:url("/images/16.gif");
+	  color:white;
+	  background-size: 1200px 800px; 
+	  font-size: 20px;
+	   }
+	 a:link{
+	 	color: white;
+	 }
+	 a:visited{
+	 	color: orange;
+	 }
+	</style>
+</head>
+<body class="bg" link="white" align="center">
+<h1><b>Admin login Successful!!<b></h1>
+Please Check the below link for the list of students enrolled in the respective colleges<br><br>
+<br>
+<br><a><%= link_to"Enrollment",:action=>'Enrollment'%></a>
+</body>

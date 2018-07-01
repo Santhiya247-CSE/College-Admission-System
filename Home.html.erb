@@ -1,0 +1,28 @@
+<head>
+	<style>
+		.bg{
+			background-image:url("/images/4.jpeg");
+			background-size: 1000px 900px
+		}
+			a:link{
+	 	color: orange;
+	 }
+	 a:visited{
+	 	color: red;
+	 }
+	 a:active{
+	 	color: white;
+	}
+	</style>
+</head>
+<body class="bg" align="center">
+	<br><br><br><br>
+<marquee>
+<h1><font family="Timesnewroman" color="darkblue">College Admissions Portal 2018</font></h1>
+</marquee>
+<br><br><br><br><br><br><br><br><br>
+<a><%= link_to"StudentLogin",:action=>'StudentLogin'%><br><br>
+<%= link_to"AdminLogin",:action=>'AdminLogin'%><br><br>
+<%= link_to"Contact Us",:action=>'About'%><br><br>
+</a>
+</body>

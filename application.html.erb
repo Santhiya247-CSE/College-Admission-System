@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyProject</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= yield %>
+ <head>
+ <style>
+   .footer{ 
+       position: absolute;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+       color:blue
+   }  
+   a:link{
+    color: orange;
+   }
+   a:visited{
+    color: red;
+   }
+   a:active{
+    color: white;
+  }
+</style>
+</head>
+    <div class="footer"><mark><span style="background-color: #FFFFFF"></span><h1><font color="orange">Santhiya&copy;2017,All Rights Reserved</font></h1></mark></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    ||<a href="Home">Home</a>||
+<a href="StudentLogin">Student Login</a>||
+<a href="AdminLogin">Admin Login</a>||
+<a href="About">Contact Us</a>
+</body>
+</html>

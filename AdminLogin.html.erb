@@ -1,0 +1,42 @@
+<!--<h1>Admission#AdminLogin</h1>
+<p>Find me in app/views/admission/AdminLogin.html.erb</p>-->
+<head>
+	<style>
+		.bg{
+			background-image: url("/images/7.jpg");
+			background-size:1000px 800px;
+		}
+		a:link{
+	 	color: white;
+	 }
+	 a:visited{
+	 	color: orange;
+	 }
+	 a:active{
+	 	color: white;
+	}
+	</style>
+</head>
+<body class="bg">
+<p align="center"><b>Enter Admin Credentials</p>
+<form name="admin" action="AdminLoginaction" method="get">
+<table  border='1' width="10" align="center">
+	  <tr>
+	  <td>AdminId:</td>
+	  <td><input type="text" name="name" required />
+	  </td>
+	  </tr>
+	 <tr>
+	  <td>Password:</td>
+	  <td><input type="Password" name="password" maxlength='8' required/>
+	  </td>
+	  </tr>
+	  <tr>
+	  <td><td>
+	  <input type="submit" value="SignIn">
+	  </td></td>
+	  </tr>
+</table>
+</form>
+</body>
+

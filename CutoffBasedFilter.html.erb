@@ -1,0 +1,15 @@
+	<ol>
+	<% for x in @a %>
+<% if x.coff==params["coff"]%>
+<br><li>Name:<%= x.name%><br>
+	Cut-off:<%= x.coff%>
+<%@flag=1%>
+<% end %>
+<% end %>
+</li>
+</ol>
+<% if @flag!=1 %>
+        <h2 align="center">Sorry :( </h2>
+        <h4 align="center">No Such Students in this Cut-off..</h4>
+     <% end %>
+     <a href="Home">HOME</a>

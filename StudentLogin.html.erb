@@ -1,0 +1,121 @@
+<!--<h1>Admission#StudentLogin</h1>
+<p>Find me in app/views/admission/StudentLogin.html.erb</p>-->
+
+
+<font color="white">
+	<br><br>
+<marquee>
+<font color="white" size='5'><b>Fill the form for Engineering admissions in Top 10 Colleges,India.</b></font></marquee>
+<body align="center" background="/images/21.gif">
+<br><br><br>
+<font size="5"><b> Registration form</b></font>
+<br><br>
+<b>	
+<form name="reg" action="StudentLoginaction" method="get">
+<table  border='5' width="20">
+	<tr>
+	<td>Name:</td>
+	<td><input type="text" name="name" required>
+	</td>
+	</tr>
+	<tr>
+	<td>Age:</td>
+	<td><input type="text" name="age" required>
+	</td>
+	</tr>
+	<tr>
+	<td>Gender:</td>
+	<td><input type="radio" value='Male' name="gender"/>Male
+	  <input type="radio" value='Female' name="gender"/>Female
+	  </td>
+	</tr>
+	<tr>
+	<td>Date Of Birth:</td>
+	<td><input type="date" name="dob" required>
+	</td>
+	</tr>
+	<tr>
+	<td>Address:</td>
+	<td><textarea name="address" placeholder="Address here"></textarea>
+	</td>
+	</tr>
+	<tr>
+	<td>Qualification:</td>
+	<td><input type="text" name="qualification" value="+2" readonly>
+	</td>
+	<td>Board</td>
+	<td>
+	<select name="board">
+		<option value="CBSE">CBSE</option>
+		<option value="State Board">State Board</option>
+	</select>
+	</td>
+	<td>State:</td>
+	<td><select name="state">
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Kerala">Kerala</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Assam">Assam</option>
+		<option value="Haryana">Haryana</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td>Upload your Photo<td><input type="file" name="pic"></td></td>
+	</tr>
+	<tr>
+	<td>Engg. Cut-off</td>
+	<td>
+	<input type="number" min='190' max='200' name="coff"/ >
+	</td>
+	</tr>
+	<tr><td>Choose the College</td>
+	<td><select name="clg">
+		<option value="IIT,Kanpur">IIT,Kanpur</option>
+		<option value="MSEC,Virudhunagar">MSEC,Virudhunagar</option>
+		<option value="TCE,Madurai">TCE,Madurai</option>
+		<option value="CIT,Coimbatore">CIT,Coimbatore</option>
+		<option value="PSG,Coimbatore">PSG,Coimbatore</option>
+		<option value="UCEN,Nagercoil">UCEN,Nagercoil</option>
+		<option value="SXCCE,Kanyakumari">SXCCE,Kanyakumari</option>
+		<option value="VIT,Chennai">VIT,Chennai</option>
+		<option value="MIT,Chennai">MIT,Chennai</option>
+		<option value="SRM,Chennai">SRM,Chennai</option>
+		</select>
+		</td>
+	<td>Department</td>
+	<td>
+		<select name="dept">
+		<option value="Civil">Civil</option>
+		<option value="ECE">ECE</option>
+		<option value="CSE">CSE</option>
+		<option value="EEE">EEE</option>
+		<option value="IT">IT</option>
+		<option value="Bio-Tech">Bio-Tech</option>
+		<option value="Aerospace Engineering">Aerospace Engineering</option>
+		<option value="Mechanical">Mechanical</option>
+		</select>
+		</td>
+		</tr>
+	<tr>
+	<td>Contact Number:</td>	
+	<td><input type="text" name="cno"/>
+	</td>
+	</tr>
+	<tr>
+	<td>Mail id:</td>
+	  <td>
+	  <input type="email" name="mail" placeholder="user@domainname.com" />
+	  </td>
+	</tr>
+	<tr>
+	<td><td><input type="submit" value="Submit">
+		
+	</td></td>
+	</tr>
+</b>
+</body>
+</table>
+</form>

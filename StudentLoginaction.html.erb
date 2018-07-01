@@ -1,0 +1,27 @@
+<head>
+	<style>
+		.bg{
+		background:url("/images/10.gif");
+		background-size: 1200px 800px;
+		}
+		a:link{
+	 	color: white;
+	 }
+	 a:visited{
+	 	color: orange;
+	 }
+	 a:active{
+	 	color: white;
+	}
+	</style>
+</head>
+<body class="bg" link="white">
+<br><br>
+<font color="White" size="5"><b><%=@msg%></b></font>
+<br>
+<br>
+<a href="/home"%>
+	<br>
+	<br>
+		<b><a><%=link_to"Home",:action=>"Home"%></a></b>
+</body>
